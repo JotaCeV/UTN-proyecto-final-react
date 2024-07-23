@@ -54,15 +54,15 @@
 
 @keyframes adjust-nav {
   to {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(47, 54, 69, 0.8);
     font-size: 16px;
-    color: #000;
+    /* color: #000; */
     backdrop-filter: blur(3px);
   }
 }
 
 @keyframes adjust-link-colors {
   to {
-    color: #000;
+    /* color: #000; */
   }
 }
