@@ -1,0 +1,103 @@
+.game-header {
+  width: 100%;
+  height: 70vh;
+  background: url("../../assets/img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game-header h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.blue-bg {
+  background-color: rgba(47, 54, 69, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container {
+  background-color: #fff;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 4rem 2rem;
+  border-radius: 0.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container h2 {
+  font-size: 40px;
+  margin: 3rem 0;
+}
+
+.puzzle-container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  margin: 3rem 0;
+}
+
+.puzzle-container div {
+  border: 3px solid black;
+  width: 15vw;
+  height: 40vh;
+  color: #fff;
+  background-color: gray;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.puzzle-container div img {
+  height: 100%;
+  width: 100%;
+}
+
+.puzzle-pieces-container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.puzzle-pieces-container div {
+  background-color: aqua;
+  width: 15vw;
+  height: 40vh;
+}
+
+.puzzle-pieces-container div img {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.reset-button {
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  background-color: #2f3645;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: transform 0.2s ease-in-out;
+}
+
+.reset-button:hover {
+  transform: scale(1.1);
+}
