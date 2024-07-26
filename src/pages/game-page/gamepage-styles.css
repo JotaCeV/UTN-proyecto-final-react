@@ -49,8 +49,8 @@
   margin: 3rem 0;
 }
 
-.puzzle-container div {
-  border: 3px solid black;
+.puzzle-block {
+  border: 3px dashed black;
   width: 15vw;
   height: 40vh;
   color: #fff;
@@ -60,6 +60,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.completed-block {
+  border: none;
 }
 
 .puzzle-container div img {
@@ -100,4 +104,18 @@
 
 .reset-button:hover {
   transform: scale(1.1);
+}
+
+.completed-board {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: join-board 1.5s forwards;
+}
+
+@keyframes join-board {
+  0% {
+    gap: 2rem;
+  }
+  100% {
+    gap: 0;
+  }
 }
