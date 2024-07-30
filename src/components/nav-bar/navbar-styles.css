@@ -1,7 +1,7 @@
 .nav-container {
   box-sizing: border-box;
   width: 100%;
-  background-color: transparent;
+  background: linear-gradient(to bottom, #2f3645, transparent);
   height: 6vh;
   color: #fff;
   z-index: 1;
@@ -43,13 +43,22 @@
 }
 
 .nav-container ul li a {
+  padding: 0.3rem 0.9rem;
   font-weight: 800;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+  border-radius: 1rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
   animation: adjust-link-colors linear both;
   animation-timeline: scroll();
   animation-range: 0 150px;
+}
+
+.nav-container ul li a:hover {
+  background-color: #fff;
+  color: #2f3645;
 }
 
 @keyframes adjust-nav {
