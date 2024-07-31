@@ -19,18 +19,26 @@ function GamePage() {
   };
 
   const handleOnDragStart = (e, id) => {
-    e.dataTransfer.setData("id", id);
+    if (!isCompleted) {
+      e.dataTransfer.setData("id", id);
+    }
   };
 
   const handleOnDrop = (e, newPosition) => {
     const id = e.dataTransfer.getData("id");
-    const updatedPieces = puzzlePieces.map((piece) => {
-      if (piece.id === parseInt(id)) {
-        return { ...piece, position: newPosition };
-      }
-      return piece;
-    });
-    setPuzzlePieces(updatedPieces);
+    const samePosPieces = puzzlePieces.filter(
+      (p) => p.position === newPosition
+    );
+
+    if (!samePosPieces.length) {
+      const updatedPieces = puzzlePieces.map((piece) => {
+        if (piece.id === parseInt(id)) {
+          return { ...piece, position: newPosition };
+        }
+        return piece;
+      });
+      setPuzzlePieces(updatedPieces);
+    }
   };
 
   const handleReset = () => {
