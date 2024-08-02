@@ -2,8 +2,13 @@ import "./homepage-styles.css";
 import historyImg from "../../assets/historia-programacion.jpg";
 import gameImg from "../../assets/img2.jpg";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function HomePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <header className="home-header-container">

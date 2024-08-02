@@ -47,6 +47,10 @@ function GamePage() {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     if (
       puzzlePieces[0].position !== "position" &&
       puzzlePieces[1].position !== "position" &&
