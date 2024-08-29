@@ -21,16 +21,12 @@ function HomePage() {
           <div className="contain-card">
             <img src={historyImg} />
             <p>Conozcamos un poco sobre la historia de la programacion</p>
-            <Link to="/history">
-              <button>Ir a historia</button>
-            </Link>
+            <Link to="/history">Ir a historia</Link>
           </div>
           <div className="contain-card">
             <img src={gameImg} />
             <p>Vamos a jugar un poco utilizando metodos aprendidos en clase</p>
-            <Link to="/game">
-              <button>Ir a juego</button>
-            </Link>
+            <Link to="/game">Ir a juego</Link>
           </div>
         </section>
       </main>

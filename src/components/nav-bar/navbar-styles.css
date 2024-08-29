@@ -23,9 +23,6 @@
 .nav-container > a {
   text-decoration: none;
   color: #fff;
-  animation: adjust-link-colors linear both;
-  animation-timeline: scroll();
-  animation-range: 0 150px;
 }
 
 .nav-container h1 {
@@ -62,5 +59,19 @@
     background-color: rgba(47, 54, 69, 0.8);
     font-size: 16px;
     backdrop-filter: blur(3px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-container {
+    padding: 0;
+    animation: none;
+    background: none;
+    background-color: #2f3645;
+    font-size: 15px;
+  }
+
+  .nav-container ul {
+    width: 70%;
   }
 }

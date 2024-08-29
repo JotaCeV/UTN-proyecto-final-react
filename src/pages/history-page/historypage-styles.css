@@ -45,11 +45,7 @@
   justify-content: space-between;
 }
 
-.history-container section img {
-  width: 45%;
-}
-
-.history-container section span {
+.history-container section > * {
   width: 45%;
 }
 
